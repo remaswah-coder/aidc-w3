@@ -73,7 +73,7 @@ Generated 128 new tokens.
 
 Calculated tokens per second.
 
-Profiling ResultsDtypeContextResident VRAMMean utilisationTokens/sFP165123.113 GB46.3%23.0FP1620483.295 GB67.7%-FP1640963.568 GB86.3%-INT85121.805 GB23.2%-INT820482.035 GB27.7%-INT840962.309 GB31.5%
+
 <img width="770" height="256" alt="Screenshot 2026-08-30 143147" src="https://github.com/user-attachments/assets/30ad7258-301c-46a6-ac86-9376a7c82730" />
 
 
