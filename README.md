@@ -59,9 +59,36 @@ for dtype in ["fp16", "int8"]:
     free_vram()
 ```
 
-Each run:Created a prompt at the requested context length.Performed an eight-token warm-up.Recorded resident PyTorch VRAM.Sampled nvidia-smi utilisation every two seconds.Generated 128 new tokens.Calculated tokens per second.Profiling ResultsDtypeContextResident VRAMMean utilisationTokens/sFP165123.113 GB46.3%23.0FP1620483.295 GB67.7%-FP1640963.568 GB86.3%-INT85121.805 GB23.2%-INT820482.035 GB27.7%-INT840962.309 GB)31.5%-<img width="770" height="256" alt="Screenshot 2026-08-30 143147" src="https://github.com/user-attachments/assets/e6cf2d82-9a5f-46e7-85bf-c30cc344f3a6" />
+Each run:
 
-Batch ExperimentThe same FP16 model and 512-token context were profiled at batch 1 and batch 8:BatchResident VRAMMean utilisationTokens/s1--23.08--187.6FindingsResident VRAM increased with context length for both dtypes.FP16 used more VRAM than INT8 at every context length.Single-request utilisation rose with context, but utilisation alone did not describe throughput.Batching greatly improved total throughput (from 23.0 to 187.6 tokens/s) by giving the GPU more work to process in parallel.ArtifactsThe experiment produced:profile.jsonbatch_check.jsonVerificationFinal result:Plaintextrows: 6, dtypes: ['int8', 'fp16'], contexts: [512, 2048, 4096]
+Created a prompt at the requested context length.
+
+Performed an eight-token warm-up.
+
+Recorded resident PyTorch VRAM.
+
+Sampled nvidia-smi utilisation every two seconds.
+
+Generated 128 new tokens.
+
+Calculated tokens per second.
+
+Profiling ResultsDtypeContextResident VRAMMean utilisationTokens/sFP165123.113 GB46.3%23.0FP1620483.295 GB67.7%-FP1640963.568 GB86.3%-INT85121.805 GB23.2%-INT820482.035 GB27.7%-INT840962.309 GB31.5%
+<img width="770" height="256" alt="Screenshot 2026-08-30 143147" src="https://github.com/user-attachments/assets/30ad7258-301c-46a6-ac86-9376a7c82730" />
+
+Batch ExperimentThe same FP16 model and 512-token context were profiled at batch 1 and batch 8:BatchResident VRAMMean utilisationTokens/s1--23.08--187.6
+1--23.08--187.6FindingsResident VRAM increased with context length for both dtypes.FP16 used more VRAM than INT8 at every context length.Single-request utilisation rose with context, but utilisation alone did not describe throughput.Batching greatly improved total throughput (from 23.0 to 187.6 tokens/s) by giving the GPU more work to process in parallel.ArtifactsThe experiment produced:profile.jsonbatch_check.json
+
+Verification
+Final result:
+
+Plaintext
+```
+rows: 6, dtypes: ['int8', 'fp16'], contexts: [512, 2048, 4096]
 batch-1 tokens/s: 23.0, batch-8 tokens/s: 187.6
 GREEN CHECK: PASS
+```
+
+
+
 Key TakeawayGPU utilisation answers whether the GPU had work during a sampling interval. It does not answer how much useful work was completed. Throughput, latency, memory use, batch size, and context length must be considered together when evaluating inference performance.
