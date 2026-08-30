@@ -61,17 +61,17 @@ for dtype in ["fp16", "int8"]:
 
 Each run:
 
-Created a prompt at the requested context length.
+* Created a prompt at the requested context length.
 
-Performed an eight-token warm-up.
+* Performed an eight-token warm-up.
 
-Recorded resident PyTorch VRAM.
+* Recorded resident PyTorch VRAM.
 
-Sampled nvidia-smi utilisation every two seconds.
+* Sampled nvidia-smi utilisation every two seconds.
 
-Generated 128 new tokens.
+* Generated 128 new tokens.
 
-Calculated tokens per second.
+* Calculated tokens per second.
 
 
 <img width="770" height="256" alt="Screenshot 2026-08-30 143147" src="https://github.com/user-attachments/assets/30ad7258-301c-46a6-ac86-9376a7c82730" />
