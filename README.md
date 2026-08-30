@@ -57,6 +57,7 @@ for dtype in ["fp16", "int8"]:
         rows.append(row)
     del model
     free_vram()
+```
 
 Each run:Created a prompt at the requested context length.Performed an eight-token warm-up.Recorded resident PyTorch VRAM.Sampled nvidia-smi utilisation every two seconds.Generated 128 new tokens.Calculated tokens per second.Profiling ResultsDtypeContextResident VRAMMean utilisationTokens/sFP165123.113 GB46.3%23.0FP1620483.295 GB67.7%-FP1640963.568 GB86.3%-INT85121.805 GB23.2%-INT820482.035 GB27.7%-INT840962.309 GB)31.5%-<img width="770" height="256" alt="Screenshot 2026-08-30 143147" src="https://github.com/user-attachments/assets/e6cf2d82-9a5f-46e7-85bf-c30cc344f3a6" />
 
