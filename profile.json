@@ -1,0 +1,32 @@
+[
+  {
+    "dtype": "fp16",
+    "context": 512,
+    "tokens_per_s": 30.8
+  },
+  {
+    "dtype": "fp16",
+    "context": 2048,
+    "tokens_per_s": 15.2
+  },
+  {
+    "dtype": "fp16",
+    "context": 4096,
+    "tokens_per_s": 8.1
+  },
+  {
+    "dtype": "int8",
+    "context": 512,
+    "tokens_per_s": 35.4
+  },
+  {
+    "dtype": "int8",
+    "context": 2048,
+    "tokens_per_s": 18.0
+  },
+  {
+    "dtype": "int8",
+    "context": 4096,
+    "tokens_per_s": 9.5
+  }
+]
