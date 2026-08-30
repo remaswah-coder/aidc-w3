@@ -104,4 +104,5 @@ GREEN CHECK: PASS
 
 
 
-Key TakeawayGPU utilisation answers whether the GPU had work during a sampling interval. It does not answer how much useful work was completed. Throughput, latency, memory use, batch size, and context length must be considered together when evaluating inference performance.
+## Key Takeaway
+GPU utilisation answers whether the GPU had work during a sampling interval. It does not answer how much useful work was completed. Throughput, latency, memory use, batch size, and context length must be considered together when evaluating inference performance.
