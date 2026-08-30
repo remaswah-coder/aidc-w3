@@ -76,8 +76,21 @@ Calculated tokens per second.
 Profiling ResultsDtypeContextResident VRAMMean utilisationTokens/sFP165123.113 GB46.3%23.0FP1620483.295 GB67.7%-FP1640963.568 GB86.3%-INT85121.805 GB23.2%-INT820482.035 GB27.7%-INT840962.309 GB31.5%
 <img width="770" height="256" alt="Screenshot 2026-08-30 143147" src="https://github.com/user-attachments/assets/30ad7258-301c-46a6-ac86-9376a7c82730" />
 
-Batch ExperimentThe same FP16 model and 512-token context were profiled at batch 1 and batch 8:BatchResident VRAMMean utilisationTokens/s1--23.08--187.6
-1--23.08--187.6FindingsResident VRAM increased with context length for both dtypes.FP16 used more VRAM than INT8 at every context length.Single-request utilisation rose with context, but utilisation alone did not describe throughput.Batching greatly improved total throughput (from 23.0 to 187.6 tokens/s) by giving the GPU more work to process in parallel.ArtifactsThe experiment produced:profile.jsonbatch_check.json
+
+
+## Findings
+
+* Resident VRAM increased with context length for both dtypes.
+* FP16 used more VRAM than INT8 at every context length.
+* Single-request utilisation rose with context, but utilisation alone did not describe throughput.
+* Batching greatly improved total throughput (from 23.0 to 187.6 tokens/s) by giving the GPU more work to process in parallel.
+
+## Artifacts
+
+The experiment produced:
+* `profile.json`
+* `batch_check.json`
+
 
 Verification
 Final result:
