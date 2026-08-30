@@ -1,5 +1,5 @@
 # AIDC W3D1 — Profile Inference on a Real GPU
-
+ 
 This lab profiles Qwen/Qwen2.5-1.5B-Instruct on a Google Colab Tesla T4. It compares FP16 and INT8 across three context lengths, then tests batch 1 against batch 8 to show why GPU utilisation is not the same as useful throughput.
 
 ## Objective
