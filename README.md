@@ -28,14 +28,16 @@ This extra lab explores memory management strategies for KV-cache to improve LLM
 ### 🔍 Verification Output & Result
 
 > ** (Verification Result):**
-<img width="1392" height="82" alt="Screenshot 2026-08-31 145809" src="https://github.com/user-attachments/assets/6c88878e-f137-4dfb-8cc0-9a9ef9b779d4" />
-
 
 
 ```text
 Extra Lab: reference: slab 18 resident, block-pool 60 resident, advantage 3.33x
 GREEN CHECK: PASS
 ```
+
+<img width="1392" height="82" alt="Screenshot 2026-08-31 145809" src="https://github.com/user-attachments/assets/6c88878e-f137-4dfb-8cc0-9a9ef9b779d4" />
+
+
 
 ## 🐛 Extra Lab: The Prompt That Wasn't As Long As You Asked (Bug Lab)
 
