@@ -14,13 +14,6 @@ Welcome to the **W3D2** branch of the **aidc-w3** repository! This directory con
 <img width="1108" height="192" alt="Screenshot 2026-08-31 133644" src="https://github.com/user-attachments/assets/462face5-563a-49b0-bd7b-4859dc5f97f3" />
 
 
-## 🚀 Overview & Usage
-
-This workspace contains automated scripts and generated outputs designed to handle model baselines and infrastructure verification. 
-
-1. **Environment Setup**: Ensure your environment matches the required configuration using the provided scripts.
-2. **Verification**: Run `verify_cell.py` to validate dependencies and check environment health.
-3. **Results**: The `baselines.json` file serves as the primary output record for this session's benchmarks.
 
 
 ## 🧪 Extra Lab: The Paged KV Allocator (PagedAttention Simulation)
