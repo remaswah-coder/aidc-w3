@@ -56,8 +56,6 @@ Investigated and fixed a silent token-shortfall bug in `prompt_of_len()`, where 
 
 > ** (Verification Result):**
 
-<img width="1212" height="314" alt="Screenshot 2026-08-31 150247" src="https://github.com/user-attachments/assets/a457116e-ba7b-4624-9fcd-263a0c2ddd98" />
-
 ```text
 for n in [128, 512, 2048, 4096]:
     p = prompt_of_len(n)
@@ -65,3 +63,11 @@ for n in [128, 512, 2048, 4096]:
     assert actual == n, f"prompt_of_len({n}) produced {actual} tokens"
 GREEN CHECK: PASS
 ```
+<img width="1212" height="314" alt="Screenshot 2026-08-31 150247" src="https://github.com/user-attachments/assets/a457116e-ba7b-4624-9fcd-263a0c2ddd98" />
+## 🚀 Overview & Usage
+
+This workspace contains automated scripts and generated outputs designed to handle model baselines and infrastructure verification. 
+
+1. **Environment Setup**: Ensure your environment matches the required configuration using the provided scripts.
+2. **Verification**: Run `verify_cell.py` to validate dependencies and check environment health.
+3. **Results**: The `baselines.json` and `kv_sim_report.json` files serve as the primary output records for this session's benchmarks.
