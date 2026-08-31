@@ -63,3 +63,4 @@ for n in [128, 512, 2048, 4096]:
     actual = len(tok(p)["input_ids"])
     assert actual == n, f"prompt_of_len({n}) produced {actual} tokens"
 GREEN CHECK: PASS
+```
