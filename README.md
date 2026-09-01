@@ -7,11 +7,12 @@ Developed as part of the AI Engineering coursework / SDA AI Data Center Bootcamp
 ---
 
 ## 📂 Project Structure
-
 ```text
-├── ab_report.json          # Generated A/B testing performance metrics and speedup ratios
-├── benchmark_sweep.py      # Async concurrency sweep client (httpx-based)
-└── README.md               # Project documentation
+├── ab_report.json        # Generated A/B testing performance metrics and speedup ratios
+├── benchmark_sweep.py    # Async concurrency sweep client (httpx-based)
+└── README.md             # Project documentation
+```
+
 
 
 ## 📊 Key Performance Metrics
@@ -23,10 +24,11 @@ The benchmarking sweep evaluates throughput (`tokens/sec`) across multiple concu
 | **8** | ~96.6 tokens/s | ~359.3 tokens/s | **3.72x** 🚀 |
 
 ### ✅ Verification Status
-<img width="1714" height="110" alt="Screenshot 2026-09-01 164444" src="https://github.com/userattachments/assets/a9170eef-4efa-4e10-a046-e29316ec5e8c" />
 
+<img width="100%" alt="Verification Pass" src="https://github.com/user-attachments/assets/a9170eef-4efa-4e10-a046-e29316ec5e8c" />
 
 ---
+
 
 ## 🛠️ Tech Stack & Tools
 
@@ -36,6 +38,8 @@ The benchmarking sweep evaluates throughput (`tokens/sec`) across multiple concu
 * **Version Control:** Git & GitHub
 
 ---
+
+
 
 ## ⚙️ How to Run
 
