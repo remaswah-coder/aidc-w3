@@ -53,8 +53,7 @@ The benchmarking sweep evaluates throughput (`tokens/sec`) across multiple concu
 2. **Execute the Concurrency Sweep & Generate Report:**
    Run the benchmark script in your environment to test concurrencies `[1, 4, 8]` and automatically write the metrics to `ab_report.json`.
 
-3. **Verify Results:**
-   Ensure the output matches the validation criteria and passes the test:
+3. **Verify Results:** Ensure the output matches the validation criteria and passes the test:
    > ✅ **GREEN CHECK: PASS**
 
 
