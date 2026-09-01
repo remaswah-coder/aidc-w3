@@ -23,9 +23,7 @@ The benchmarking sweep evaluates throughput (`tokens/sec`) across multiple concu
 | **8** | ~96.6 tokens/s | ~359.3 tokens/s | **3.72x** 🚀 |
 
 ### ✅ Verification Status
-
-
-![Lab Verification](https://github.com/user-attachments/assets/cc99a50b-c457-4ee2-a4e5-2fa46a8a0d21)
+<img width="1714" height="110" alt="Screenshot 2026-09-01 164444" src="https://github.com/user-attachments/assets/a9170eef-4efa-4e10-a046-e29316ec5e8c" />
 
 
 ---
