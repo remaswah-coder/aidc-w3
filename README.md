@@ -2,7 +2,7 @@
 
 This repository contains the implementation, benchmarking scripts, and evaluation reports for comparing static batching against continuous batching using **vLLM** and **Qwen/Qwen2.5-1.5B-Instruct**. 
 
-Developed as part of the AI Engineering coursework / SDA AI Data Center Bootcamp.
+Developed as part of the AI Engineering coursework / SDA AI Data Center Bootcamp. 
 
 ---
 
