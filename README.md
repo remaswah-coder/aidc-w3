@@ -23,10 +23,7 @@ The benchmarking sweep evaluates throughput (`tokens/sec`) across multiple concu
 | **8** | ~96.6 tokens/s | ~359.3 tokens/s | **3.72x** 🚀 |
 
 ### ✅ Verification Status
-
-![Lab Verification - Green Check Pass]
-<img scr="1714" height="110" alt="Screenshot 2026-09-01 164444" src="https://github.com/user-attachments/assets/79d42d74-e074-451b-9158-dcef59b77436" 
-
+![Lab Verification](https://github.com/user-attachments/assets/cc99a50b-c457-4ee2-a4e5-2fa46a8a0d21)
 
 
 ---
