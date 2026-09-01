@@ -55,8 +55,6 @@ The benchmarking sweep evaluates throughput (`tokens/sec`) across multiple concu
 
 3. **Verify Results:**
    Ensure the output matches the validation criteria and passes the test:
-   ```text
-  GREEN CHECK: PASS 
-```
+   > ✅ **GREEN CHECK: PASS**
 
 
