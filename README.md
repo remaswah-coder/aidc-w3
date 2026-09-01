@@ -25,7 +25,7 @@ The benchmarking sweep evaluates throughput (`tokens/sec`) across multiple concu
 ### ✅ Verification Status
 
 ![Lab Verification - Green Check Pass]
-<img width="1714" height="110" alt="Screenshot 2026-09-01 164444" src="https://github.com/user-attachments/assets/79d42d74-e074-451b-9158-dcef59b77436" 
+<img scr="1714" height="110" alt="Screenshot 2026-09-01 164444" src="https://github.com/user-attachments/assets/79d42d74-e074-451b-9158-dcef59b77436" 
 
 
 
