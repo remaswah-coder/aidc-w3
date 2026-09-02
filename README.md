@@ -43,23 +43,16 @@ This repository contains the implementation, configuration logs, and verificatio
 
 ## 🧪 Verification
 
-The setup includes an automated verification script (`verify_cell.py`) that checks both the smoke test results and the strict formatting of the model lock file. 
-
 To run the verification locally in your notebook, use:
+`python verify_cell.py`
 
-```bash
-python verify_cell.py
+**Expected Output:**
+- smoke score: 10/10, distractor clean: True
+- model-lock.md: all fields filled
+- GREEN CHECK: PASS
 
-```
+**Execution Proof:**
 
-
-smoke score: 10/10, distractor clean: True
-model-lock.md: all fields filled
-GREEN CHECK: PASS
-
-
-
-Here is the successful execution proof:
 <img width="892" height="140" alt="Screenshot 2026-09-02 135540" src="https://github.com/user-attachments/assets/f6a0da04-8970-4314-b5b1-d6cebb2f29cb" />
 
 
