@@ -1,4 +1,4 @@
-# W3D4: Model Quantization (AWQ), vLLM Serving & Function-Calling Smoke Test
+# W3D4: Model Quantization (AWQ), vLLM Serving & Function-Calling Smoke Test 
 
 This repository contains the implementation, configuration logs, and verification artifacts for **Day 4** of the AI Data Center Bootcamp. The core objective of this lab is to quantize and serve an instruction-tuned model locally using AWQ, optimize KV-cache allocation under a constrained GPU memory budget, and lock the configuration to pass a strict function-calling smoke test.
 
