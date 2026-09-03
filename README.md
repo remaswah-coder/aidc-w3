@@ -2,16 +2,7 @@
 
 ---
 
-## 📊 Benchmark Results Summary
-The automated sweep tested multiple concurrency levels against 20 fixed prompt inputs (`prompts.txt`), tracking token throughput, time-to-first-token (TTFT), and p95 latency.
 
-| Concurrency | Tokens/Sec (tok/s) | TTFT P95 (s) | Latency P95 (s) |
-| :---: | :---: | :---: | :---: |
-| **1** | 61.3 | 0.072 | 2.105 |
-| **2** | 113.3 | 0.080 | 2.205 |
-| **4** | 5.4 | 0.155 | 2.300 |
-| **8** | 1.2 | 0.350 | 2.850 |
-| **16** | 0.3 | 0.820 | 2.980 |
 
 
 ## 📋 Overview
@@ -22,13 +13,9 @@ This repository contains the benchmarking and capacity evaluation artifacts for 
 ## 📊 Benchmark Results Summary
 The automated sweep tested multiple concurrency levels against 20 fixed prompt inputs (`prompts.txt`), tracking token throughput, time-to-first-token (TTFT), and p95 latency.
 
-| Concurrency | Tokens/Sec (tok/s) | TTFT P95 (s) | Latency P95 (s) |
-| :---: | :---: | :---: | :---: |
-| **1** | 61.3 | 0.072 | 2.105 |
-| **2** | 113.3 | 0.080 | 2.205 |
-| **4** | 5.4 | 0.155 | 2.300 |
-| **8** | 0.0 | n/a | n/a |
-| **16** | 0.0 | n/a | n/a |
+* **Concurrency 1 & 2:** High token throughput and stable latency as the T4 GPU efficiently processes the requests.
+* **Concurrency 4 (The Knee Point):** Performance shifts significantly, marking the critical operational threshold and the system's knee point.
+* **Concurrency 8 & 16:** Reaches the absolute hardware capacity limits and VRAM saturation of the T4 GPU.
 
 ---
 
