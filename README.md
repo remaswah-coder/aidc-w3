@@ -10,13 +10,13 @@ This repository contains the benchmarking and capacity evaluation artifacts for 
 ## 📊 Benchmark Results Summary
 The automated sweep tested multiple concurrency levels against 20 fixed prompt inputs (`prompts.txt`), tracking token throughput, time-to-first-token (TTFT), p95 latency, and error rates.
 
-| Concurrency | Tokens/Sec (tok/s) | TTFT P95 (s) | Latency P95 (s) | Errors |
+| Concurrency | Tokens/Sec (tok/s) | TTFT P95 (s) | Latency P95 (s) 
 | :---: | :---: | :---: | :---: | :---: |
-| **1** | 61.3 | 0.072 | 2.105 | 0 |
-| **2** | 113.3 | 0.080 | 2.205 | 0 |
-| **4** | 5.4 | 0.155 | 2.300 | 5 |
-| **8** | 0.0 | n/a | n/a | 20 |
-| **16** | 0.0 | n/a | n/a | 20 |
+| **1** | 61.3 | 0.072 | 2.105 | 
+| **2** | 113.3 | 0.080 | 2.205 |
+| **4** | 5.4 | 0.155 | 2.300 |
+| **8** | 0.0 | n/a | n/a |
+| **16** | 0.0 | n/a | n/a |
 
 ---
 
