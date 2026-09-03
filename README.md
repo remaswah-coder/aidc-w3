@@ -2,17 +2,28 @@
 
 ---
 
+## 📊 Benchmark Results Summary
+The automated sweep tested multiple concurrency levels against 20 fixed prompt inputs (`prompts.txt`), tracking token throughput, time-to-first-token (TTFT), and p95 latency.
+
+| Concurrency | Tokens/Sec (tok/s) | TTFT P95 (s) | Latency P95 (s) |
+| :---: | :---: | :---: | :---: |
+| **1** | 61.3 | 0.072 | 2.105 |
+| **2** | 113.3 | 0.080 | 2.205 |
+| **4** | 5.4 | 0.155 | 2.300 |
+| **8** | 0.0 | n/a | n/a |
+| **16** | 0.0 | n/a | n/a |
+
 ## 📋 Overview
 This repository contains the benchmarking and capacity evaluation artifacts for **W3D5**, executed on a Google Colab **T4 GPU** environment running **vLLM** with `Qwen/Qwen2.5-1.5B-Instruct`.
 
 ---
 
 ## 📊 Benchmark Results Summary
-The automated sweep tested multiple concurrency levels against 20 fixed prompt inputs (`prompts.txt`), tracking token throughput, time-to-first-token (TTFT), p95 latency, and error rates.
+The automated sweep tested multiple concurrency levels against 20 fixed prompt inputs (`prompts.txt`), tracking token throughput, time-to-first-token (TTFT), and p95 latency.
 
 | Concurrency | Tokens/Sec (tok/s) | TTFT P95 (s) | Latency P95 (s) |
-| :---: | :---: | :---: | :---: | :---: |
-| **1** | 61.3 | 0.072 | 2.105 | 
+| :---: | :---: | :---: | :---: |
+| **1** | 61.3 | 0.072 | 2.105 |
 | **2** | 113.3 | 0.080 | 2.205 |
 | **4** | 5.4 | 0.155 | 2.300 |
 | **8** | 0.0 | n/a | n/a |
