@@ -44,7 +44,7 @@ python verify.py
 Expected Output:
 
 Plaintext
-```text
+```text   
 GREEN CHECK: PASS
 ```
 
