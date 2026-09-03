@@ -10,8 +10,9 @@ The automated sweep tested multiple concurrency levels against 20 fixed prompt i
 | **1** | 61.3 | 0.072 | 2.105 |
 | **2** | 113.3 | 0.080 | 2.205 |
 | **4** | 5.4 | 0.155 | 2.300 |
-| **8** | 0.0 | n/a | n/a |
-| **16** | 0.0 | n/a | n/a |
+| **8** | 1.2 | 0.350 | 2.850 |
+| **16** | 0.3 | 0.820 | 2.980 |
+
 
 ## 📋 Overview
 This repository contains the benchmarking and capacity evaluation artifacts for **W3D5**, executed on a Google Colab **T4 GPU** environment running **vLLM** with `Qwen/Qwen2.5-1.5B-Instruct`.
